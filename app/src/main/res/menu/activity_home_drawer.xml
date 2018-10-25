@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+
+        >
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Browse on Map"
+            
+            />
+
+
+        <item
+            android:id="@+id/nav_serach_byCat"
+
+
+            android:title="Browse by Category"
+            />
+
+
+
+
+
+
+        <item
+            android:id="@+id/nav_profile"
+
+
+            android:title="Update Profile"
+           />
+
+
+
+        <item
+            android:id="@+id/nav_city"
+            android:title="Select City"
+            />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+
+            android:title="Sign out"/>
+
+
+
+        <item
+            android:id="@+id/nav_extra"
+            android:title=""
+            />
+
+
+
+
+
+    </group>
+
+
+
+
+
+</menu>
