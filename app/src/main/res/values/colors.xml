@@ -13,4 +13,7 @@
 
     <color name="overlay">#80000000</color>
     <color name="textColor">#ffffff</color>
+
+    <color name="text_light">#ffffff</color>
+    <color name="text_dark">#000000</color>
 </resources>

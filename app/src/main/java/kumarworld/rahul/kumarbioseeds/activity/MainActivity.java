@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearLayout linear_main;
     private Toolbar toolbar;
 
-    private NavigationView navigationView,navForCart;
+    private NavigationView navigationView, navForCart;
     private DrawerLayout drawerLayout;
 
 
@@ -54,9 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cardAbout.setOnClickListener(this);
 
 
-
     }
-
 
 
     private void findViews() {
@@ -80,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         navigationView.inflateMenu(R.menu.activity_home_drawer);
         navHeader = navigationView.inflateHeaderView(R.layout.lay_navigation_drawer_header);
-        linear_main=(LinearLayout)findViewById(R.id.linear_main);
+        linear_main = (LinearLayout) findViewById(R.id.linear_main);
         setUpNavigationView();
 
     }
@@ -120,12 +118,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
-
-
-
-
-
 
 
     private void setUpNavigationView() {
@@ -174,9 +166,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         break;
 
 
-
                     case R.id.nav_logout:
-                       // logoutApplication(getResources().getString(R.string.app_name),"Are You sure you want to Logout ?");
+                        // logoutApplication(getResources().getString(R.string.app_name),"Are You sure you want to Logout ?");
 
 
                         return true;
@@ -214,9 +205,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
                 super.onDrawerSlide(drawerView, slideOffset);
-                /*linear_main.setTranslationX(slideOffset * drawerView.getWidth());
+                linear_main.setTranslationX(slideOffset * drawerView.getWidth());
                 drawerLayout.bringChildToFront(drawerView);
-                drawerLayout.requestLayout();*/
+                drawerLayout.requestLayout();
             }
         };
 

@@ -26,7 +26,8 @@
             android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".activity.Activity_Product"/>
         <activity android:name=".activity.Activity_Categories"/>
-        <activity android:name=".activity.Activity_Enquiry"/>
+        <activity android:name=".activity.Activity_Enquiry"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".activity.Activity_ProductDetails"/>
         <activity android:name=".activity.Activity_TechSupport"/>
         <activity android:name=".activity.Activity_WetherReport"/>

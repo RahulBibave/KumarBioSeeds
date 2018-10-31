@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -24,7 +28,7 @@
                 android:id="@+id/txt_SignUpHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cultivation Manual"
+                android:text="About Kumar BioSeeds"
                 android:layout_marginLeft="@dimen/size20dp"
                 android:layout_centerVertical="true"
                 android:textColor="@color/white"
@@ -36,4 +40,37 @@
     </android.support.v7.widget.Toolbar>
 
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginRight="@dimen/size20dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/size20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="We are a leading seed company focused on breeding, production and marketing of seeds for Indian farming community."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginRight="@dimen/size20dp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size20dp"
+            android:text="@string/about"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

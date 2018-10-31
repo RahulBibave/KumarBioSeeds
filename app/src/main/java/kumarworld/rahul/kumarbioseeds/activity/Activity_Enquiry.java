@@ -23,15 +23,14 @@ public class Activity_Enquiry extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enquiry);
-        radioGroup=(RadioGroup)findViewById(R.id.radioGroup1);
-        radioEnquiry=(RadioButton)findViewById(R.id.radioMap);
-        radioAsk=(RadioButton)findViewById(R.id.radioList);
+        radioGroup=findViewById(R.id.radioGroup1);
+        radioEnquiry=findViewById(R.id.radioMap);
+        radioAsk=findViewById(R.id.radioList);
         replaceFragment(new fragment_Enquiry());
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
-
                 switch (checkedId){
                     case R.id.radioMap:
                         replaceFragment(new fragment_Enquiry());

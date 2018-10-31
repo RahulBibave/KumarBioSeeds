@@ -21,18 +21,7 @@ import kumarworld.rahul.kumarbioseeds.R;
  */
 
 public class CommonUI {
-   /* public static void showAlert(Context mycontext, String title, String message) {
-        new AlertDialog.Builder(mycontext)
-                .setTitle(title)
-                .setMessage(message)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // continue with delete
-                    }
-                })
-//
-                .show();
-    }*/
+
 
 
     public static void showAlert(Context context , String title, String msg){
