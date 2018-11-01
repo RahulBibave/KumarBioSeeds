@@ -28,14 +28,19 @@ public class CommonUI {
 
         final Dialog dialog = new Dialog(context);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        try {
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
+
         dialog.setContentView(R.layout.layout_custom_alert_dialog);
-        TextView txtContent=(TextView)dialog.findViewById(R.id.tvCustomAlertContent);
-        TextView txtTitle=(TextView)dialog.findViewById(R.id.tvCustomAlertTitle);
+        TextView txtContent=dialog.findViewById(R.id.tvCustomAlertContent);
+        TextView txtTitle=dialog.findViewById(R.id.tvCustomAlertTitle);
         txtTitle.setText(title);
         txtContent.setText(msg);
 
-        Button no = (Button) dialog.findViewById(R.id.btnNo);
+        Button no =  dialog.findViewById(R.id.btnNo);
 
         no.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +61,7 @@ public class CommonUI {
 
 
 
-    public static boolean isNetworkAvailable(Context context) {
+  /*  public static boolean isNetworkAvailable(Context context) {
         try {
             ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = cm.getActiveNetworkInfo();
@@ -67,7 +72,7 @@ public class CommonUI {
         }
         return false;
     }
-
+*/
 
 
 
